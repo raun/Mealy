@@ -13,16 +13,13 @@ int main(){
     while(fin){
     	for(int j=0;j<N;++j){
         	fin>>DFA[i][j]>>output[i][j];
-        	//cout<<DFA[i][j]<<output[i][j];
         }
-        //cout<<endl;
         i++;
     }
     i=0;
     cout<<"\nEnter the input string:";
     cin>>str;
     while(str[i]!='\0'){
-    	//cout<<"Testing "<<str[i]<<" "<<state<<" "<<output[state][str[i]-'a'];;
     		if(DFA[state][str[i]-'a']==-1)
     			break;
     		cout<<output[state][str[i]-'a'];
